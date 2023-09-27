@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Nunito+Sans:opsz,wght@6..12,200&family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red;
+    outline-offset: -1px;*/
+}
+
+.phone {
+    width: 360px;
+    height: 640px;
+    background-color: #000;
+    border: 10px solid #333;
+    border-radius: 20px;
+    margin: 50px auto;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para a tela do celular (área de exibição do conteúdo) */
+.screen {
+    background: linear-gradient(0deg, rgba(35,255,0,1) 16%, rgba(43,197,89,1) 55%, rgba(3,77,13,1) 100%);
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o cabeçalho do aplicativo (opcional) */
+header {
+    width: 100%;
+    border-bottom: 2px solid #030000;
+    margin-top: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5rem;
+    margin: .5rem;
+}
+
+/* Estilos para o texto do aplicativo */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+
+
+.nome-saldo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#saldo-text {
+    color: var(--gray, #faf7fa);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: Sarabun;
+}
+
+#saldo-valor {
+    color: var(--black, #fffdfd);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.img-cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+.img-cliente img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(12, 238, 132, 0.897) 5px 14px 28px, rgba(236, 52, 197, 0.22) 0px 10px 10px;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    border: 1px solid #000000;
+    flex-shrink: 0;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background: #04ac1a;
+
+}
+
+.gastos-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+
+}
+
+.gastos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 8rem;
+    margin: 1rem;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.gastos img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.gastos-nome {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(0, 0, 0);
+    margin-top: 1rem;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nomes {
+    color: #faf7f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-ponto {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.expires {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: var(--white, #FFF);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+
+}
+
+.info-nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white, #FFF);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 5px;
+}
+
+/*footer{
+    border-top: 2px solid rgb(15, 11, 11);
+}*/
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 0, 0);
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 80px;
+    margin-top: 1rem;
+    
+}
